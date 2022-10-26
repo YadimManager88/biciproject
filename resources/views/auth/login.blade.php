@@ -1,126 +1,93 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ config('app.name') }} | Login</title>
+@extends('layouts.app3')
 
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+@section('content')
+  
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- AdminLTE -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/css/adminlte.min.css"
-          integrity="sha512-mxrUXSjrxl8vm5GwafxcqTrEwO1/oBNU25l20GODsysHReZo4uhVISzAKzaABH6/tTfAxZrY2FprmeAP5UZY8A=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- iCheck -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icheck-bootstrap/3.0.1/icheck-bootstrap.min.css"
-          integrity="sha512-8vq2g5nHE062j3xor4XxPeZiPjmRDh6wlufQlfC6pdQ/9urJkU07NM0tEREeymP++NczacJ/Q59ul+/K2eYvcg=="
-          crossorigin="anonymous"/>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-<body class="hold-transition login-page">
-<div class="login-box">
-    <div class="login-logo">
-        <a href="{{ url('/home') }}"><b>{{ config('app.name') }}</b></a>
-    </div>
-
-    <!-- /.login-logo -->
-
-    <!-- /.login-box-body -->
-    <div class="card">
-        <div class="card-body login-card-body">
-            <p class="login-box-msg">Sign in to start your session</p>
-
-            <form method="post" action="{{ url('/login') }}">
-                @csrf
-
-                <div class="input-group mb-3">
-                    <input type="email"
-                           name="email"
-                           value="{{ old('email') }}"
-                           placeholder="Email"
-                           class="form-control @error('email') is-invalid @enderror">
-                    <div class="input-group-append">
-                        <div class="input-group-text"><span class="fas fa-envelope"></span></div>
-                    </div>
-                    @error('email')
-                    <span class="error invalid-feedback">{{ $message }}</span>
-                    @enderror
-                </div>
-
-                <div class="input-group mb-3">
-                    <input type="password"
-                           name="password"
-                           placeholder="Password"
-                           class="form-control @error('password') is-invalid @enderror">
-                    <div class="input-group-append">
-                        <div class="input-group-text">
-                            <span class="fas fa-lock"></span>
-                        </div>
-                    </div>
-                    @error('password')
-                    <span class="error invalid-feedback">{{ $message }}</span>
-                    @enderror
-
-                </div>
-
-                <div class="row">
-                    <div class="col-8">
-                        <div class="icheck-primary">
-                            <input type="checkbox" id="remember">
-                            <label for="remember">Remember Me</label>
-                        </div>
-                    </div>
-
-                    <div class="col-4">
-                        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
-                    </div>
-
-                </div>
-            </form>
-
-            <p class="mb-1">
-                <a href="{{ route('password.request') }}">I forgot my password</a>
-            </p>
-            <p class="mb-0">
-                <a href="{{ route('register') }}" class="text-center">Register a new membership</a>
-            </p>
-        </div>
-        <!-- /.login-card-body -->
-    </div>
-
+    <body style="background-image: url('https://bloximages.newyork1.vip.townnews.com/dailyastorian.com/content/tncms/assets/v3/editorial/4/7f/47f41772-f54d-11eb-9068-d331ec305bea/610ad4f467315.hires.jpg');
+         background-repeat: no-repeat;
+            background-size: cover; ">
+          <div class="row mt-lg-n10 mt-md-n11 mt-n10 justify-content-center">
+              @include('layouts.navbar')
 </div>
-<!-- /.login-box -->
+    <main class="main-content  mt-0">
+        <br>
+</br> 
+<br>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-        crossorigin="anonymous"></script>
+      
 
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
+            <br>
+</br>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-        crossorigin="anonymous"></script>
+<br>
+</br>
+<br>
+</br>
 
-<!-- AdminLTE App -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/js/adminlte.min.js"
-        integrity="sha512-AJUWwfMxFuQLv1iPZOTZX0N/jTCIrLxyZjTRKQostNU71MzZTEPHjajSK20Kj1TwJELpP7gl+ShXw5brpnKwEg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        </div>
+        <div class="container">
+            <div class="row mt-lg-n10 mt-md-n11 mt-n10 justify-content-center">
+                <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
+                    <div class="card z-index-0">
+                        <div class="card-header text-center pt-4">
+                        <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 " href="{{ url('/') }}">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4369/4369559.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
+                            
+                                </a>
+                            <h5>Ingresa tus credenciales</h5>
+                        </div>
+                        <div class="row px-xl-5 px-sm-4 px-3">
+                          
+                          
+                        
+                          
+                        </div>
 
-</body>
-</html>
+                        <div class="card-body">
+                        <form role="form" method="POST" action="{{ route('login') }}">
+                                        @csrf
+                                        @method('post')
+                                        <div class="flex flex-col mb-3">
+                                            <h5>Correo Electronico</h5>
+                                            <input type="email" name="email" class="form-control form-control-lg" aria-label="Email">
+                                            @error('email') <p class="text-danger text-xs pt-1"> Usuario no encontrado</p>@enderror
+                                        </div>
+                                        <div class="flex flex-col mb-3">
+                                            <h5>Contraseña</h5>
+                                            <input type="password" name="password" class="form-control form-control-lg" aria-label="Password" >
+                                            @error('password') <p class="text-danger text-xs pt-1"> Contraseña no valida </p>@enderror
+           
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" name="remember" type="checkbox" id="rememberMe">
+                                            <label class="form-check-label" for="rememberMe">Recuerdame</label>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Iniciar Sesion</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                                <p class="mb-1 text-sm mx-auto">
+                                        He olvidado mi contraseña? Restablecer
+                                        <a href="{{ route('password.request') }}" class="text-primary text-gradient font-weight-bold">Aqui</a>
+                                    </p>
+                                </div>
+                                <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                                    <p class="mb-4 text-sm mx-auto">
+                                        No cuenta con una cuenta ?
+                                        <a href="{{ route('register') }}" class="text-primary text-gradient font-weight-bold">Registrarme</a>
+                                    </p>
+                                </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    </body>
+   
+@endsection

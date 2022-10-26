@@ -4,10 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Bienvenido</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -20,113 +23,462 @@
             }
         </style>
     </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+    <body class="hold-transition login-page" class="bg-image" 
+ style="background-image: url('https://trek.scene7.com/is/image/TrekBicycleProducts/UY_October2022DiscountsHomepageMarquee?$responsive-pjpg$&cache=on,on&wid=1920');
+         background-repeat: no-repeat;
+            background-size: cover; ">
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+       
+    
+    
+                        <style>
+                        .bd-placeholder-img {
+                            font-size: 1.125rem;
+                            text-anchor: middle;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            user-select: none;
+                        }
 
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
-                        <g clip-path="url(#clip0)" fill="#EF3B2D">
-                            <path d="M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"/>
-                        </g>
-                    </svg>
-                </div>
+                        @media (min-width: 768px) {
+                            .bd-placeholder-img-lg {
+                            font-size: 3.5rem;
+                            }
+                        }
 
-                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="p-6">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
+                        .b-example-divider {
+                            height: 3rem;
+                            background-color: rgba(0, 0, 0, .1);
+                            border: solid rgba(0, 0, 0, .15);
+                            border-width: 1px 0;
+                            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+                        }
+
+                        .b-example-vr {
+                            flex-shrink: 0;
+                            width: 1.5rem;
+                            height: 100vh;
+                        }
+
+                        .bi {
+                            vertical-align: -.125em;
+                            fill: currentColor;
+                        }
+
+                        .nav-scroller {
+                            position: relative;
+                            z-index: 2;
+                            height: 2.75rem;
+                            overflow-y: hidden;
+                        }
+
+                        .nav-scroller .nav {
+                            display: flex;
+                            flex-wrap: nowrap;
+                            padding-bottom: 1rem;
+                            margin-top: -1px;
+                            overflow-x: auto;
+                            text-align: center;
+                            white-space: nowrap;
+                            -webkit-overflow-scrolling: touch;
+                        }
+                        </style>
+
+                        
+                   
+                    <body>
+                        
+                    
+                    
+                    <nav class="navbar bg-light">
+                                                <div class="container-fluid">
+                                                    <a class="navbar-brand" href="#">
+                                                    <img src="https://cdn-icons-png.flaticon.com/512/3600/3600996.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                                                    1BICI
+                                                    </a>
+
+                                                    <ul class="nav justify-content-center">
+                                         <form class="form-inline my-2 my-lg-0">
+                                        @if (Route::has('login'))
+                                            
+                                            @auth
+                                                <!--<a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>-->
+                                                <a href="{{ url('/home') }}" class="btn btn-warning">Gestionar Cita</a>
+                                        
+                                            @else
+                                            
+                                                <a href="{{ route('login') }}" class="btn btn-primary my-2">Iniciar Sesion</a>
+                                        
+
+                                                @if (Route::has('register'))
+                                                <!--    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Registrame</a> -->
+                                                    <a href="{{ route('register') }}" class="btn btn-success">Registrarme</a>
+                                                @endif
+                                            @endauth
+
+                                            </div>
+                                        @endif
+
+                                                                    
+                                     </div>
+                                            </nav>
+                
+                    <main>
+
+                   
+                    <section class="py-2 text-center container"  >
+                         <div class="row py-lg-2" style="color:#E63232 " >
+                        <div class="col-lg-6 col-md-8 mx-auto" style="background-image: url('https://www.todofondos.net/wp-content/uploads/teal-full-hd-fondo-azul-resolucion-2560x1600-pixel-hd-1024x640.jpg');
+         background-repeat: no-repeat;
+            background-size: cover; ">
+                            <h1 class="fw-light" style="color:#FFFFFF" >Bienvenido</h1>
+                            <p class="fw-light" style="color:#FFFFFF ">Necesitas Mantenimiento o Servicio , Agenda tu cita hoy mismo , hemos puesto a tu disposicion una manera mas eficiente de realizar tus gestiones</p>
+                          
+                            <a href="{{ route('login') }}" class="btn btn-primary my-2">Realizar una cita </a>
+                            <a href="#" class="btn btn-secondary my-2">Contactanos</a> 
+                        
+                            </p>
+                        </div>
+                        </div>
+
+                        <div class="container text-center">
+  <div class="row">
+    <div class="col">
+      
+    </div>
+    <div class="col">
+        <h1 style="color:#FFFFFF" >
+        Conoce Nuestras Ubicaciones
+
+        </h1>
+     
+    </div>
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <div class="col">
+    
+    </div>
+  </div>
+</div>
+                        <div class="row row-cols-1 row-cols-md-3 g-4"  style="background-image: url('https://www.adentity.es/wp-content/uploads/2019/08/Varias-ubicaciones-Google-My-Business.png');
+         background-repeat: no-repeat;
+            background-size: cover; ">
+                        <div class="col">
+                            <div class="card h-100">
+                            <img src="https://scontent.fgua2-1.fna.fbcdn.net/v/t39.30808-6/312176768_568664331730216_501969288739132067_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=0H-SCaaNrq8AX9Dx_A_&_nc_ht=scontent.fgua2-1.fna&oh=00_AT-7YwPTQTjagfsQNcUE0YtyBwOoh1x7hFnGw2MnphcnBw&oe=635AD93F" class="card-img-top" alt="..." height="300">
+                            <div class="card-body">
+                            <h5 class="card-title" style="color:#2374F1">Sucursal  20 ca 19 av</h5>
+                                <p class="card-text">Horarios de Atencion</p>
+                                <p class="card-text">Lunes a Viernes: 07AM - 05 PM</p>
+                                <p class="card-text">Sabado:          07AM - 1 PM</p>
                             </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
-                                </div>
+                            <div class="card-footer">
+                            <a href="https://goo.gl/maps/cJujBSc8djGr8dbh9" class="btn btn-success">Ubicacion </a>
+                            </div>
+                            </div>
+                            <br></br>
+                        </div>
+                        <br></br>
+                        <br></br>
+                        <div class="col">
+                            <div class="card h-100">
+                            <img src="https://scontent.fgua2-1.fna.fbcdn.net/v/t39.30808-6/273147374_4956271381097341_6984769812489232452_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=e3f864&_nc_ohc=olLxj0ySvNAAX_bZgQT&_nc_ht=scontent.fgua2-1.fna&oh=00_AT8x52WGpY-QrwpaRU_frVBMsgJpCdeD3F5iCP8VdxEkFg&oe=635B3D7E" class="card-img-top" alt="..." height="300">
+                            <div class="card-body">
+                               
+                                <h5 class="card-title" style="color:#2374F1">Sucursal  13 CA 06 av</h5>
+                                <p class="card-text">Horarios de Atencion</p>
+                                <p class="card-text">Lunes a Viernes: 07AM - 05 PM</p>
+                                <p class="card-text">Sabado:          07AM - 1 PM</p>
+                            </div>
+                            <div class="card-footer">
+                            <a href="https://goo.gl/maps/UgSbUBWGXgftqZgu8" class="btn btn-success">Ubicacion </a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                            <img src="https://scontent.fgua2-1.fna.fbcdn.net/v/t1.6435-9/166719359_3975710922486730_2334601994193171841_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Qga7EbxoFJoAX9hoUK1&_nc_ht=scontent.fgua2-1.fna&oh=00_AT-hhyvOkOBE9ZANS-h5xiElhPON0T7k_w0koaoN5tTa8Q&oe=637C2688" class="card-img-top" alt="..." height="300">
+                            <div class="card-body">
+                               
+                                <h5 class="card-title" style="color:#2374F1">Sucursal  09 ca 10 av</h5>
+                                <p class="card-text">Horarios de Atencion</p>
+                                <p class="card-text">Lunes a Viernes: 07AM - 05 PM</p>
+                                <p class="card-text">Sabado:          07AM - 1 PM</p>
+                            </div>
+                            <div class="card-footer">
+                            <a href="https://goo.gl/maps/AU3mBs1r8TZp9u1P7" class="btn btn-success">Ubicacion </a>
+                            </div>
                             </div>
                         </div>
 
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com" class="underline text-gray-900 dark:text-white">Laracasts</a></div>
-                            </div>
+            
+                       
+              
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
+                      
+                                                    
+                    </section>
+
+                    <section class="py-5 text-center container"   >
+
+                    <form class="py-5 text-center container" width="500" height="225" 
+                      >
+
+                        <div class="card mb-3" width="400" height="225"  class="bg-image" 
+ style="background-image: url('http://content.zone-secure.net/Farmacity/September-2018/Imperdibles/publication/contents/cover.jpg');
+         background-repeat: repeat;
+            background-size: cover; ">
+                            <center><img src="http://content.zone-secure.net/Farmacity/September-2018/Imperdibles/publication/contents/cover.jpg"  width="auto" height="225"   widhtclass="card-img-top" alt="..."></center>
+                
+              
+    
+
+                    <div class="album py-5 bg-grey" >
+                        
+
+                        <div class="container">
+
+                        <!-- PRIMERA SECCION DE PRODUCTOS -->
+
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            <div class="col">
+                            <div class="card shadow-sm">
+                            <img src="https://www.ciclismoenguate.com/images/virtuemart/product/DDM-CT.png" width="100%" height="225" class="d-inline-block align-text-top">
+                                <div class="card-body">
+                                <p class="card-text"> Asiento Serfas</p>
+                                <p class="card-text">Construida con la tecnología patentada ICS (Infinite Comfort System). Compuesto por una base de goma suave y flexible seguida de dos capas de espuma de celda cerrada suave y firme, y una capa superior final de Reactive Gel®</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Q500</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Pocas Unidades</button>
+                               
+                                    </div>
+                                    <small class="text-muted">Septiembre</small>
+                                </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/" class="underline text-gray-900 dark:text-white">Laravel News</a></div>
                             </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
+                            <div class="col">
+                            <div class="card shadow-sm">
+                               
+                            <img src="https://www.ciclismoenguate.com/images/virtuemart/product/LT.STM4BK.png" width="100%" height="225" class="d-inline-block align-text-top">
+                                <div class="card-body">
+                                <p class="card-text"> Bolsa Serfas </p>
+                                <p class="card-text">Bolsa de anclaje sobre el marco para celulares hasta 5.5" de pantalla. Capacidad de 1.72L con panel transparente permite controlar la pantalla y visualizar fácilmente las notificaciones móviles y la guía de mapas GPS..</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Q500</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Pocas Unidades</button>
+                                    
+                                    </div>
+                                    <small class="text-muted">Septiembre</small>
+                                </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</div>
                             </div>
+                            <div class="col">
+                            <div class="card shadow-sm">
+                            <img src="https://www.ciclismoenguate.com/images/virtuemart/product/Macator%20azul4.png" width="100%" height="225" class="d-inline-block align-text-top">
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
+                                <div class="card-body">
+                                <p class="card-text"> Casco Abus Macator</p>
+                                <p class="card-text">El casco Macator de la prestigiosa marca Abus es el ideal para iniciar con un casco de caracterísicas altas. Con un diseño ligero y estable gracias a la union duradera del EPS y la calota de policarbonato. Buena ventilación.
+
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Q430</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Disponible</button>
+                                    
+                                    </div>
+                                    <small class="text-muted">Septiembre</small>
+                                </div>
                                 </div>
                             </div>
+                            </div>
+
+
+
+                            <!---- SEGUNDA SECCION DE PRODUCTOS  -->
+
+                            <div class="col">
+                            <div class="card shadow-sm">
+                            <img src="https://www.ciclismoenguate.com/images/virtuemart/product/Combo%20350-30.png" width="100%" height="225" class="d-inline-block align-text-top">
+                                <div class="card-body">
+                                <p class="card-text"> 
+                                Combo de luces Serfas 350/30 lumen</p>
+                                <p class="card-text">Las luces serfas rediseñadas en un cuerpo de aluminio y lente óptico potenciado por LED permiten mejor visibilidad.La base incluida con rotación te permitirá ajustar el ángulo de la luz y poder iluminar de la mejor forma el camino. Al ser recargable incluye el cable USB.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Q500</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Pocas Unidades</button>
+                               
+                                    </div>
+                                    <small class="text-muted">Septiembre</small>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col">
+                            <div class="card shadow-sm">
+                               
+                            <img src="https://www.ciclismoenguate.com/images/virtuemart/product/Kit%20CK-6.png" width="100%" height="225" class="d-inline-block align-text-top">
+                                <div class="card-body">
+                                <p class="card-text"> Combo Serfas Inflador CK-6 </p>
+                                <p class="card-text">El combo CK-6 de Serfas es el kit ideal para estar preparado para cualquier colazo. 
+
+Cuenta con dos infladores, uno para tenerlo en casa y verificar la presión de las llantas antes de salir a cada colazo y el otro es un mini inflador portatil que te sacará de cualquier apuro.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Q500</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Pocas Unidades</button>
+                                    
+                                    </div>
+                                    <small class="text-muted">Septiembre</small>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col">
+                            <div class="card shadow-sm">
+                            <img src="https://www.ciclismoenguate.com/images/virtuemart/product/Cannondale%20IQ%20200.png" width="100%" height="225" class="d-inline-block align-text-top">
+
+                                <div class="card-body">
+                                <p class="card-text"> Computadora Cannondale Wireless</p>
+                                <p class="card-text">Manteniéndolo simple y enfocado, la computadora inalámbrica IQ200 captura todos los datos de conducción pertinentes en un paquete limpio y ordenado.  11 funciones.
+
+                            - Datos esenciales del viaje.
+
+                            - Perfil bajo.
+
+                            - Montaje inalámbrico para una fácil configuración y uso.
+
+ 
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Q430</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Disponible</button>
+                                    
+                                    </div>
+                                    <small class="text-muted">Septiembre</small>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!---  TERCERA SECCION DE PRODUCTOS -->
+                            <div class="col">
+                            <div class="card shadow-sm">
+                            <img src="https://www.ciclismoenguate.com/images/virtuemart/product/Alpina-roja.jpg" width="100%" height="225" class="d-inline-block align-text-top">
+                                <div class="card-body">
+                                <p class="card-text"> Goat Alpina Rojo 2022</p>
+                                <p class="card-text">Goat Alpina es el modelo de entrada de la marca, la mejor apuesta en el mercado para iniciar o retomar el ciclismo.
+
+Con el marco de aluminio y su configuración de 2x8 velocidades la vuelven liviana y versatil para todos los terrenos.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Q500</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Pocas Unidades</button>
+                               
+                                    </div>
+                                    <small class="text-muted">Septiembre</small>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col">
+                            <div class="card shadow-sm">
+                               
+                            <img src="https://www.ciclismoenguate.com/images/virtuemart/product/E-Lume%201750.png" width="100%" height="225" class="d-inline-block align-text-top">
+                                <div class="card-body">
+                                <p class="card-text"> Luz delantera Serfas E-Lume 1750 </p>
+                                <p class="card-text">Las luces serfas rediseñadas en un cuerpo de aluminio y lente óptico potenciado por LED permiten mejor visibilidad.
+
+La base incluida con rotación te permitirá ajustar el ángulo de la luz y poder iluminar de la mejor forma el camino..</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Q500</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Pocas Unidades</button>
+                                    
+                                    </div>
+                                    <small class="text-muted">Septiembre</small>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col">
+                            <div class="card shadow-sm">
+                            <img src="https://www.ciclismoenguate.com/images/virtuemart/product/st-cr8.png" width="100%" height="225" class="d-inline-block align-text-top">
+
+                                <div class="card-body">
+                                <p class="card-text"> Multiherramienta Serfas ST-CR8</p>
+                                <p class="card-text"> La multiherramienta Serfas ST-CR8 con su tamaño compacto es perfecta para la mecánica básica que se requiere en cualquier colazo.
+
+Cuenta con 8 funciones con sus llaves Allen 2, 2.5, 3, 4, 5, 6, Philips y la llave de estrella Torx T-125.
+
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Q430</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Disponible</button>
+                                    
+                                    </div>
+                                    <small class="text-muted">Septiembre</small>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+
+                           
+                            </div>
+                            </div>
                         </div>
+                        </div>
+
+                        <!---  TERCERA SECCION DE PRODUCTOS -->
+                        
+                        
                     </div>
-                </div>
 
-                <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
-                    <div class="text-center text-sm text-gray-500 sm:text-left">
-                        <div class="flex items-center">
-                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
-                                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                            </svg>
+                    
+                    </section>
 
-                            <a href="https://laravel.bigcartel.com" class="ml-1 underline">
-                                Shop
-                            </a>
+                    
 
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
-                                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                            </svg>
+                    </main>
 
-                            <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
-                                Sponsor
-                            </a>
-                        </div>
+                    <footer class="text-muted py-5">
+                    <div class="container">
+                        <p class="float-end mb-1">
+                        <a href="#">Back to top</a>
+                        </p>
+                        <p class="mb-1">1BICI &copy;Derechos Reservados, se prohibe la venta no autorizada bajo la marca 1BICI</p>
+                       
                     </div>
+                    </footer>
 
-                    <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
-                    </div>
-                </div>
-            </div>
+
+                        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+                        
+                    </body>
+                    </html>
+
+
+
+
+
+
+
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+            
         </div>
     </body>
 </html>

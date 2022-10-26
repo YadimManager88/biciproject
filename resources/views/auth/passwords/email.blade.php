@@ -1,95 +1,76 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ config('app.name') }}</title>
+@extends('layouts.app3')
 
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- AdminLTE -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/css/adminlte.min.css"
-          integrity="sha512-mxrUXSjrxl8vm5GwafxcqTrEwO1/oBNU25l20GODsysHReZo4uhVISzAKzaABH6/tTfAxZrY2FprmeAP5UZY8A=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- iCheck -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icheck-bootstrap/3.0.1/icheck-bootstrap.min.css"
-          integrity="sha512-8vq2g5nHE062j3xor4XxPeZiPjmRDh6wlufQlfC6pdQ/9urJkU07NM0tEREeymP++NczacJ/Q59ul+/K2eYvcg=="
-          crossorigin="anonymous"/>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-<body class="hold-transition login-page">
-<div class="login-box">
-    <div class="login-logo">
-        <a href="{{ url('/home') }}"><b>{{ config('app.name') }}</b></a>
-    </div>
-
-    <!-- /.login-logo -->
-    <div class="card">
-        <div class="card-body login-card-body">
-            <p class="login-box-msg">You forgot your password? Here you can easily retrieve a new password.</p>
-
-            @if (session('status'))
-                <div class="alert alert-success">
-                    {{ session('status') }}
-                </div>
-            @endif
-
-            <form action="{{ route('password.email') }}" method="post">
-                @csrf
-
-                <div class="input-group mb-3">
-                    <input type="email"
-                           name="email"
-                           class="form-control @error('email') is-invalid @enderror"
-                           placeholder="Email">
-                    <div class="input-group-append">
-                        <div class="input-group-text">
-                            <span class="fas fa-envelope"></span>
-                        </div>
-                    </div>
-                    @error('email')
-                        <span class="error invalid-feedback">{{ $message }}</span>
-                    @enderror
-                </div>
-
-                <div class="row">
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary btn-block">Send Password Reset Link</button>
-                    </div>
-                    <!-- /.col -->
-                </div>
-            </form>
-
-            <p class="mt-3 mb-1">
-                <a href="{{ route("login") }}">Login</a>
-            </p>
-            <p class="mb-0">
-                <a href="{{ route("register") }}" class="text-center">Register a new membership</a>
-            </p>
+@section('content')
+<body  style="background-image: url('https://trek.scene7.com/is/image/TrekBicycleProducts/UY_October2022DiscountsHomepageMarquee?$responsive-pjpg$&cache=on,on&wid=1920');
+         background-repeat: no-repeat;
+            background-size: cover; ">
+>
+    <div class="container position-sticky z-index-sticky top-0">
+        <div class="row">
+            <div class="col-12">
+                @include('layouts.navbar')
+            </div>
         </div>
-        <!-- /.login-card-body -->
     </div>
-</div>
-<!-- /.login-box -->
+    <main class="main-content  mt-0">
+     <br>
+</br>   <br>
+</br> 
 
-<!-- AdminLTE App -->
+<br>
+</br> 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/js/adminlte.min.js"
-        integrity="sha512-AJUWwfMxFuQLv1iPZOTZX0N/jTCIrLxyZjTRKQostNU71MzZTEPHjajSK20Kj1TwJELpP7gl+ShXw5brpnKwEg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <div class="container">
+            <div class="row mt-lg-n10 mt-md-n11 mt-n10 justify-content-center">
+                <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
+                    <div class="card z-index-0">
+                        <div class="card-header text-center pt-4">
+                        <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 " href="{{ url('/') }}">
+                    <img src="https://cdn-icons-png.flaticon.com/512/7067/7067219.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
+                            
+                                </a>
+                            <h5>Restablecer Contraseña</h5>
+                            <p class="mb-0">Ingresa tu datos y espera la confirmacion por via correo electronico</p>
+                        </div>
+                        <div class="row px-xl-5 px-sm-4 px-3">
+                          
+                          
+                        
+                          
+                        </div>
+
+                        <div class="card-body">
+                        
+                        <div class="card card-plain">
+                            
+
+                                <div class="card-body">
+                                    <form role="form" method="POST" action="{{ route('password.email') }}">
+                                        @csrf
+                                        @method('post')
+                                        <div class="flex flex-col mb-3">
+                                            <input type="email" name="email" class="form-control form-control-lg" placeholder="Correo Electronico" value="{{ old('email') }}" aria-label="Email">
+                                            @error('email') <p class="text-danger text-xs pt-1"> {{$message}} </p>@enderror
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">Restablecer</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="alert">
+                                    @include('components.alert')
+                                </div>
+                            </div>
+                        </div>1
+                    </div>
+                </div>
+            </div>
+
+
+
+
+       
 </body>
-</html>
+
+    @endsection 

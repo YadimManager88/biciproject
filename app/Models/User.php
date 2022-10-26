@@ -8,9 +8,13 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
-class User extends Authenticatable
+use Spatie\Permission\Traits\HasRoles;
+
+class User extends Authenticatable implements MustVerifyEmail
 {
+    use HasRoles;
     use HasApiTokens, HasFactory, Notifiable;
+
 
     /**
      * The attributes that are mass assignable.
@@ -41,4 +45,18 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public static $rules = [
+        'name' => 'required',
+        'email' => 'required|email',
+        'password' => 'required|min:8',
+     
+    ];
+
+    public static $updateRules = [
+        'name' => 'required',
+        'email' => 'required|email',
+
+    ];
+
 }
