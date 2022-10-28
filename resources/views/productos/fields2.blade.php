@@ -28,6 +28,6 @@
 <!-- Select sucursal -->
 <div class="form-group col-sm-6">
     {!! Form::label('id_sucursals', 'Sucursal') !!}
-    {!! Form::text('id_sucursals', $sucursals->name, ['class' => 'form-control', 'disabled'=>"true"]) !!}
+    {!! Form::select('id_sucursals', $sucursals, ['class' => 'form-control', 'disabled'=>"true"]) !!}
 </div>
 

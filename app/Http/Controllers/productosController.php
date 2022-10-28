@@ -58,6 +58,7 @@ class productosController extends AppBaseController
     {
         $input = $request->all();
 
+
         $productos = $this->productosRepository->create($input);
 
         Flash::success('Producto ingresado  correctamente.');
@@ -95,7 +96,10 @@ class productosController extends AppBaseController
     public function edit($id)
     {
         $productos = $this->productosRepository->find($id);
-        $sucursals = sucursal::all()->pluck('name', 'id')->toArray();
+       
+        $sucursals = sucursal::find($productos->id_sucursals);
+       // $sucursals = sucursal::all()->pluck('name', 'id')->toArray();
+        
 
 
         if (empty($productos)) {
@@ -118,6 +122,7 @@ class productosController extends AppBaseController
     public function update($id, UpdateproductosRequest $request)
     {
         $productos = $this->productosRepository->find($id);
+      
 
         if (empty($productos)) {
             Flash::error('Productos not found');

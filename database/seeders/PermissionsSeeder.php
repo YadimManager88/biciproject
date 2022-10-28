@@ -22,6 +22,23 @@ class PermissionsSeeder extends Seeder
        $permissions_usuario = Permission::create(['name' => 'Vistausuario']);
        $permissions_rol = Permission::create(['name' => 'Vistarole']);
        $permissions_sucursal = Permission::create(['name' => 'Vistasucursal']);
+      
+      
+      //vista cliente
+       $permissions_cliente = Permission::create(['name' => 'Vistacliente']);
+       $permissions_crearcliente = Permission::create(['name' => 'crearcliente']);
+       $permissions_editarcliente = Permission::create(['name' => 'editarcliente']);
+       $permissions_crearcliente = Permission::create(['name' => 'eliminarcliente']);
+
+
+
+       $permissions_efectuarventa = Permission::create(['name' => 'Efectuarventa']);
+
+
+       $permissions_ventas = Permission::create(['name' => 'Vistaventas']);  
+       $permissions_eliminarventa = Permission::create(['name' => 'eliminarventa']); 
+
+
        
        
       $administradorrole = Role::create(['name' => 'administrador']);

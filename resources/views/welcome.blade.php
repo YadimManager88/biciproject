@@ -90,10 +90,10 @@
                         
                     
                     
-                    <nav class="navbar bg-light">
+                    <nav class="navbar bg-">
                                                 <div class="container-fluid">
                                                     <a class="navbar-brand" href="#">
-                                                    <img src="https://cdn-icons-png.flaticon.com/512/3600/3600996.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                                                    <img src="https://cdn-icons-png.flaticon.com/512/4685/4685852.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
                                                     1BICI
                                                     </a>
 
@@ -124,38 +124,46 @@
                                             </nav>
                 
                     <main>
-
-                   
-                    <section class="py-2 text-center container"  >
-                         <div class="row py-lg-2" style="color:#E63232 " >
+                    <div class="row py-lg-6" style="color:#E63232 " >
                         <div class="col-lg-6 col-md-8 mx-auto" style="background-image: url('https://www.todofondos.net/wp-content/uploads/teal-full-hd-fondo-azul-resolucion-2560x1600-pixel-hd-1024x640.jpg');
          background-repeat: no-repeat;
             background-size: cover; ">
+                             <div class="container text-center">
                             <h1 class="fw-light" style="color:#FFFFFF" >Bienvenido</h1>
-                            <p class="fw-light" style="color:#FFFFFF ">Necesitas Mantenimiento o Servicio , Agenda tu cita hoy mismo , hemos puesto a tu disposicion una manera mas eficiente de realizar tus gestiones</p>
-                          
+                             </div>
+                            <p class="fw-light" style="color:#FFFFFF ">Necesitas mantenimiento o servicio , Agenda tu cita hoy mismo , hemos puesto a tu disposicion una manera mas eficiente de realizar tus gestiones</p>
+
+                            <div class="container text-center">
                             <a href="{{ route('login') }}" class="btn btn-primary my-2">Realizar una cita </a>
                             <a href="#" class="btn btn-secondary my-2">Contactanos</a> 
+
+                            </div>
                         
                             </p>
+
+                            <div class="container text-center">
+                            <h1 class="fw-light" style="color:#FFFFFF" >Nuestras Sucursales</h1>
+                             </div>
+
+                            
+
+
+
                         </div>
-                        </div>
+                        </div>  
+
+                   
+                    <section class=" text-center container"  >
+                         
 
                         <div class="container text-center">
   <div class="row">
     <div class="col">
       
     </div>
-    <div class="col">
-        <h1 style="color:#FFFFFF" >
-        Conoce Nuestras Ubicaciones
-
-        </h1>
-     
-    </div>
+   
     <br></br>
-    <br></br>
-    <br></br>
+ 
 
     <div class="col">
     

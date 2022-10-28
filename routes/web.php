@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\VenderController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,7 +28,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 
-Route::get('/efectuarventa', [App\Http\Controllers\EfectuarVentaController::class, 'index'])->name('efectuarventa');
+
+
 
 
 
@@ -53,4 +54,13 @@ Route::group(['middleware' => ['verified','permission:Vistarole']], function () 
 Route::group(['middleware' => ['verified','permission:Vistasucursal']], function () {
     Route::resource('sucursals', App\Http\Controllers\sucursalController::class);
 });
+
+Route::get("/ventas/ticket", 'App\Http\Controllers\VentasController@ticket')->name("ventas.ticket");
+Route::get("/ventas", 'App\Http\Controllers\VentasController@index')->name("ventas.index");
+Route::get('/vender', 'App\Http\Controllers\VenderController@index')->name("vender.index");
+Route::post('/terminarOCancelarVenta', 'App\Http\Controllers\VenderController@terminarOCancelarVenta')->name("terminarOCancelarVenta");
+Route::post('/productoDeVenta', 'App\Http\Controllers\VenderController@agregarProductoVenta')->name("agregarProductoVenta");
+Route::delete('/productoDeVenta', 'App\Http\Controllers\VenderController@quitarProductoDeVenta')->name("quitarProductoDeVenta");
+Route::resource('ventas', App\Http\Controllers\VentasController::class);
+Route::resource('clientes', App\Http\Controllers\ClientesController::class);
 

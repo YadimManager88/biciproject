@@ -23,7 +23,7 @@
             <div class="card-body">
 
                 <div class="row">
-                    @include('productos.fields')
+                    @include('productos.fields2')
                 </div>
 
             </div>

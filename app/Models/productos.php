@@ -66,7 +66,7 @@ class productos extends Model
         'nombre_producto' => 'required',
         'cantidad_producto' => 'required',
         'precio_producto' => 'required',
-        'id_sucursals' => 'required'
+    
     ];
 
     

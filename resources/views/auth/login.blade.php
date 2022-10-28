@@ -1,37 +1,51 @@
 @extends('layouts.app3')
-
 @section('content')
-  
+
+
+
+
+@include('layouts.navbar') 
 
     <body style="background-image: url('https://bloximages.newyork1.vip.townnews.com/dailyastorian.com/content/tncms/assets/v3/editorial/4/7f/47f41772-f54d-11eb-9068-d331ec305bea/610ad4f467315.hires.jpg');
          background-repeat: no-repeat;
             background-size: cover; ">
+
+            
+
+            <body class=""    >
+
+            <div class="col-auto bg-danger p-0" aling="center">
+    
+
+            </div>
+
+
+            </body>
+           
+
+
+
+
           <div class="row mt-lg-n10 mt-md-n11 mt-n10 justify-content-center">
-              @include('layouts.navbar')
+            
 </div>
-    <main class="main-content  mt-0">
-        <br>
-</br> 
-<br>
-
-      
-
-            <br>
-</br>
-
-<br>
-</br>
-<br>
-</br>
-
+    <main class="main-content  mt-1">
+ 
         </div>
         <div class="container">
-            <div class="row mt-lg-n10 mt-md-n11 mt-n10 justify-content-center">
+            <div class="row mt-lg-n11 mt-md-n11 mt-n10 justify-content-center">
+            
                 <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
+
+            
+                <br>
+
+
                     <div class="card z-index-0">
                         <div class="card-header text-center pt-4">
+                            
                         <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 " href="{{ url('/') }}">
-                    <img src="https://cdn-icons-png.flaticon.com/512/4369/4369559.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
+                    <img src="https://cdn-icons-png.flaticon.com/512/272/272456.png" alt="Logo" width="150" height="150" class="d-inline-block align-text-top">
                             
                                 </a>
                             <h5>Ingresa tus credenciales</h5>
