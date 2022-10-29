@@ -3,18 +3,42 @@
 
 
 @section('content')
+<section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                <h1>Ventas <i class="fa fa-list"></i></h1>
+                </div>
+         
+
+
+                <div class="col-sm-6">
+                    <a class="btn btn-primary float-right"
+                    href="{{ route('clientes.create') }}">
+                        Añadir Nuevo
+                        
+                    </a>
+                  
+                </div>
+              
+            </div>
     
+        </div>
+        <form class="form-inline" type="get" action="{{url('/searchventas')}}">
+    <input class="form-control mr-sm-2" type="search" name="query" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0"   type="submit">Search</button>
+</form>
 
 <div class="row">
         <div class="col-12">
        
-            <h1>Clientes <i class="fa fa-users"></i></h1>
-            @can('crearcliente')
-            <a href="{{route("clientes.create")}}" class="btn btn-success mb-2">Agregar</a>
-            @endcan
+          
             @include("notificacion")
             <div class="table-responsive">
-                <table class="table table-bordered">
+
+<div class="card">
+<div class="card-body p-0">
+<table class="table" id="productos-table">
                     <thead>
                     <tr>
                         <th>Nombre</th>

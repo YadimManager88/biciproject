@@ -7,6 +7,7 @@ use App\Http\Requests\CreateproductosRequest;
 use App\Http\Requests\UpdateproductosRequest;
 use App\Repositories\productosRepository;
 use App\Http\Controllers\AppBaseController;
+
 use Illuminate\Http\Request;
 use Flash;
 use Response;
@@ -30,11 +31,17 @@ class productosController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $productos = $this->productosRepository->all();
-
-        return view('productos.index')
-            ->with('productos', $productos);
+           
+                $productos = $this->productosRepository->all();
+                 
+                  return view('productos.index')
+                       ->with('productos', $productos);
+            
+       
+        
     }
+               
+    
 
     /**
      * Show the form for creating a new productos.
@@ -162,4 +169,17 @@ class productosController extends AppBaseController
 
         return redirect(route('productos.index'));
     }
+
+    public function search()
+            {
+    $search_text = $_GET['query'];
+     $productos = //productos::whereLike(['cod_producto', 'nombre_producto'], $search_text)->get();
+    productos::where('cod_producto','LIKE','%'.$search_text.'%')
+                    ->orWhere('nombre_producto','LIKE','%'.$search_text.'%') ->get();   
+       return view('productos.search',compact('productos'));  
 }
+
+}
+
+
+

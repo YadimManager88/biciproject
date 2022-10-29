@@ -2,9 +2,9 @@
     <table class="table" id="roles-table">
         <thead>
         <tr>
-            <th>Name</th>
-        <th>Permissions</th>
-            <th colspan="3">Action</th>
+            <th>Nombre</th>
+        <th>Permisos</th>
+            <th colspan="3">Opciones</th>
         </tr>
         </thead>
         <tbody>
@@ -23,7 +23,7 @@
                            class='btn btn-default btn-xs'>
                             <i class="far fa-edit"></i>
                         </a>
-                        {!! Form::button('<i class="far fa-trash-alt"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
+                        {!! Form::button('<i class="far fa-trash-alt"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Estas seguro de eliminar?')"]) !!}
                     </div>
                     {!! Form::close() !!}
                 </td>

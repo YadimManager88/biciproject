@@ -3,6 +3,12 @@
 
 @section('content')
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    
+
+
     <div class="row">
         <div class="col-12">
             <h1>Nueva venta <i class="fa fa-cart-plus"></i></h1>
@@ -45,7 +51,7 @@
                        <form action= "{{route('agregarProductoVenta')}}" method="post">
                         @csrf
                         <div class="form-group">
-                            <label for="codigo">Código de barras</label>
+                            <label for="codigo">Código de barras o codigo de producto</label>
                             <input id="codigo" autocomplete="off" required autofocus name="codigo" type="text"
                                    class="form-control"
                                    placeholder="Código de barras">
@@ -56,7 +62,10 @@
             @if(session("productos") !== null)
                 <h2>Total: ${{number_format($total, 2)}}</h2>
                 <div class="table-responsive">
-                    <table class="table table-bordered">
+
+<div class="card">
+<div class="card-body p-0">
+<table class="table" id="productos-table">
                         <thead>
                         <tr>
                             <th>Código de barras</th>

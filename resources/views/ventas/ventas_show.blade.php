@@ -3,19 +3,47 @@
 
 
 @section('content')
+<section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                 <h1>Detalle de venta #{{$venta->id}} <i class="fa fa-list"></i></h1>
+                 <h1>Cliente: <small>{{$venta->cliente->nombre}}</small></h1>
+                </div>
+         
+
+
+                <div class="col-sm-6">
+                    <a class="btn btn-primary float-right"
+                    href="{{ route('ventas.index') }}">
+                        Volver
+                        
+                    </a>
+
+
+                </div>
+              
+            </div>
+    
+        </div>
+      
+
+    </section>
+    <nav class="navbar navbar-light bg-light justify-content-between">
+  <a class="navbar-brand"></a>
+  
+</nav>
     <div class="row">
         <div class="col-12">
-            <h1>Detalle de venta #{{$venta->id}}</h1>
-            <h1>Cliente: <small>{{$venta->cliente->nombre}}</small></h1>
+          
+          
             @include("notificacion")
-            <a class="btn btn-info" href="{{route("ventas.index")}}">
-                <i class="fa fa-arrow-left"></i>&nbsp;Volver
-            </a>
-            <a class="btn btn-success" href="{{route("ventas.ticket", ["id" => $venta->id])}}">
-                <i class="fa fa-print"></i>&nbsp;Ticket
-            </a>
-            <h2>Productos</h2>
-            <table class="table table-bordered">
+           
+          
+            <h2>Producto</h2>
+            <div class="card">
+            <div class="card-body p-0">
+    <table class="table" id="productos-table">
                 <thead>
                 <tr>
                     <th>Descripción</th>

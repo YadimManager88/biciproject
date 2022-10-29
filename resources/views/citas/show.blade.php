@@ -5,12 +5,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Detalles de Usuario</h1>
+                    <h1>Citas Details</h1>
                 </div>
                 <div class="col-sm-6">
                     <a class="btn btn-default float-right"
-                       href="{{ route('users.index') }}">
-                        Regresar
+                       href="{{ route('citas.index') }}">
+                        Back
                     </a>
                 </div>
             </div>
@@ -21,7 +21,7 @@
         <div class="card">
             <div class="card-body">
                 <div class="row">
-                    @include('users.show_fields')
+                    @include('citas.show_fields')
                 </div>
             </div>
         </div>

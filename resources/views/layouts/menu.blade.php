@@ -168,3 +168,28 @@
     </a>
 </li>
 @endcan
+
+<li class="nav-item">
+    <a href="{{ route('citas.index') }}" class="nav-link {{ Request::is('citas*') ? 'active' : '' }}">
+
+    <div class=" " style="max-width: 440px;">
+            <div class="row g-4" width="50" height="50">
+                <div class="">
+                       <img src="https://cdn-icons-png.flaticon.com/512/1497/1497835.png" class="img-fluid rounded-start" alt="logo" width="40" height="40">
+                </div>
+                <div class="col-md-8">
+                            <div class="card-body">
+                            <p style="color:#FFFFFF";>Agendar Cita</p>
+
+                             </div>
+                </div>
+
+                
+
+                
+            </div>
+
+        </div>
+       
+    </a>
+</li>

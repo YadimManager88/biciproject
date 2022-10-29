@@ -31,16 +31,27 @@
     <![endif]-->
 
 </head>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" style="background-image: url('https://bloximages.newyork1.vip.townnews.com/dailyastorian.com/content/tncms/assets/v3/editorial/4/7f/47f41772-f54d-11eb-9068-d331ec305bea/610ad4f467315.hires.jpg');
+         background-repeat: no-repeat;
+            background-size: cover; ">
 <div class="login-box">
     <div class="login-logo">
-        <a href="{{ url('/home') }}"><b>{{ config('app.name') }}</b></a>
+        <a href="{{ url('/home') }}"><b> <img src="https://cdn-icons-png.flaticon.com/512/4685/4685852.png" alt="Logo" width="110" height="100" class="d-inline-block align-text-top"></b></a>
+
+        
     </div>
 
     <div class="card">
+
+    <div class="card-header text-center pt-4">
+                         
+                                
         <div class="card-body login-card-body">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/4040/4040361.png" alt="Logo" width="150" height="150" class="d-inline-block align-text-top">
             <p class="login-box-msg">
-                You are only one step a way from your new password, recover your password now.
+                
+            Estás a un paso de tu nueva contraseña, recupera tu contraseña ahora.
             </p>
 
             <form action="{{ route('password.update') }}" method="POST">
@@ -58,7 +69,7 @@
                         <div class="input-group-text"><span class="fas fa-envelope"></span></div>
                     </div>
                     @error('email')
-                    <span class="error invalid-feedback">{{ $message }}</span>
+                    <span class="error invalid-feedback">Correo Invalido</span>
                     @enderror
                 </div>
 
@@ -66,14 +77,14 @@
                     <input type="password"
                            name="password"
                            class="form-control @error('password') is-invalid @enderror"
-                           placeholder="Password">
+                           placeholder="Contraseña">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-lock"></span>
                         </div>
                     </div>
                     @error('password')
-                    <span class="error invalid-feedback">{{ $message }}</span>
+                    <span class="error invalid-feedback">La contraseña debe de tener almenos 8 caracteres</span>
                     @enderror
                 </div>
 
@@ -81,7 +92,7 @@
                     <input type="password"
                            name="password_confirmation"
                            class="form-control"
-                           placeholder="Confirm Password">
+                           placeholder="Confirmar contraseña">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-lock"></span>
@@ -91,14 +102,14 @@
 
                 <div class="row">
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary btn-block">Reset Password</button>
+                        <button type="submit" class="btn btn-primary btn-block">Restablecer contraseña</button>
                     </div>
                     <!-- /.col -->
                 </div>
             </form>
 
             <p class="mt-3 mb-1">
-                <a href="{{ route('login') }}">Login</a>
+                <a href="{{ route('login') }}">Iniciar sesion</a>
             </p>
         </div>
         <!-- /.reset-card-body -->

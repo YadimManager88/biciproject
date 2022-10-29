@@ -9,9 +9,6 @@
 
 @include('layouts.navbar')
 
-<br></br>
-<br></br>
-<br></br>
 
 
 

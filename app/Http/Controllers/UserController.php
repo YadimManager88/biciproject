@@ -6,6 +6,7 @@ use App\Http\Requests\CreateUserRequest;
 use App\Http\Requests\UpdateUserRequest;
 use App\Repositories\UserRepository;
 use App\Http\Controllers\AppBaseController;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
@@ -164,8 +165,22 @@ class UserController extends AppBaseController
 
         $this->userRepository->delete($id);
 
-        Flash::success('User deleted successfully.');
+        Flash::success('Usuario eliminado .');
 
         return redirect(route('users.index'));
     }
+
+    public function search()
+    {
+        $search_text = $_GET['query'];
+    $users = 
+            User::where('name','LIKE','%'.$search_text.'%')
+            ->orWhere('email','LIKE','%'.$search_text.'%') ->get();   
+return view('users.search',compact('users'));  
+}
+
+
+
+
+
 }

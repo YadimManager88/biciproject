@@ -37,7 +37,7 @@
 </head>
 
 <body class="hold-transition login-page" class="bg-image" 
- style="background-image: url('https://images8.alphacoders.com/996/996331.jpg');
+ style="background-image: url('https://www.32dientes.com/wp-content/uploads/2022/07/trek_FuelEXe.webp');
          background-repeat: no-repeat;
             background-size: cover; ">
 
@@ -47,7 +47,7 @@
     <div class="login-logo">
     <div>
     <img width="200"
-     height="200"src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png ">
+     height="200"src="https://cdn-icons-png.flaticon.com/512/8399/8399721.png ">
    <!-- /.  <a href="{{ url('/home') }}"><b>{{ config('app.name') }}</b></a> -->
     </div>
     </div>
@@ -61,7 +61,7 @@ Verifique su dirección de correo electrónico </p>
 <p>Se ha enviado un nuevo enlace de verificación a su dirección de correo electrónico.</p>
 <p>Antes de continuar, verifique su correo electrónico para obtener un enlace de verificación. Si no recibió el correo electrónico, </p>
       <a href="#" onclick="event.preventDefault(); document.getElementById('resend-form').submit();">
-                                          haga clic aquí para solicitar otro
+                                          Click aqui para solicitar otro
                             </a>
                             <form id="resend-form" action="{{ route('verification.resend') }}" method="POST" >
                             @csrf
@@ -85,4 +85,3 @@ Verifique su dirección de correo electrónico </p>
 
 </body>
 </html>
-

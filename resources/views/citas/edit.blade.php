@@ -5,7 +5,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-12">
-                    <h1>Editar Role</h1>
+                    <h1>Edit Citas</h1>
                 </div>
             </div>
         </div>
@@ -17,17 +17,18 @@
 
         <div class="card">
 
-            {!! Form::model($role, ['route' => ['roles.update', $role->id], 'method' => 'patch']) !!}
+            {!! Form::model($citas, ['route' => ['citas.update', $citas->id], 'method' => 'patch']) !!}
 
             <div class="card-body">
                 <div class="row">
-                    @include('roles.fields')
+                    
+                    @include('citas.fields')
                 </div>
             </div>
 
             <div class="card-footer">
-                {!! Form::submit('Guardar', ['class' => 'btn btn-primary']) !!}
-                <a href="{{ route('roles.index') }}" class="btn btn-default">Cancelar</a>
+                {!! Form::submit('Modificar', ['class' => 'btn btn-primary']) !!}
+                <a href="{{ route('citas.index') }}" class="btn btn-danger">Cancelar</a>
             </div>
 
             {!! Form::close() !!}

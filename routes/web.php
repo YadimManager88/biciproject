@@ -26,10 +26,11 @@ Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get("/search", 'App\Http\Controllers\productosController@search');
+Route::get("/searchuser", 'App\Http\Controllers\UserController@search');
 
 
-
-
+Route::resource('citas', App\Http\Controllers\CitasController::class);
 
 
 

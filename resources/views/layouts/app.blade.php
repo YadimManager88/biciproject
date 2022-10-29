@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="UTF-8">
+
     <title>{{ config('app.name') }}</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-
+    <link href="public/css/select2.min.css" rel="stylesheet" />
+    <script src="public/js/select2.min.js"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
           integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -33,6 +36,9 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css"
           integrity="sha512-aEe/ZxePawj0+G2R+AaIxgrQuKT68I28qh+wgLrcAJOz3rxCP+TwrK5SPN+E5I+1IQjNtcfvb96HDagwrKRdBw=="
           crossorigin="anonymous"/>
+         
+           
+
 
     @stack('third_party_stylesheets')
 
@@ -87,10 +93,14 @@
     <!-- Left side column. contains the logo and sidebar -->
 @include('layouts.sidebar')
 
+
+
 <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <section class="content">
             @yield('content')
+
+           
         </section>
     </div>
 
@@ -152,6 +162,8 @@
         $(this).bootstrapSwitch('state', $(this).prop('checked'));
     });
 </script>
+
+
 
 @stack('third_party_scripts')
 

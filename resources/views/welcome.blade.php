@@ -23,10 +23,8 @@
             }
         </style>
     </head>
-    <body class="hold-transition login-page" class="bg-image" 
- style="background-image: url('https://trek.scene7.com/is/image/TrekBicycleProducts/UY_October2022DiscountsHomepageMarquee?$responsive-pjpg$&cache=on,on&wid=1920');
-         background-repeat: no-repeat;
-            background-size: cover; ">
+    <body class="hold-transition login-page" class="bg-image" style="background-color:#FFC300;" 
+ >
 
        
     
@@ -90,11 +88,11 @@
                         
                     
                     
-                    <nav class="navbar bg-">
+                    <nav class="navbar bg-dark">
                                                 <div class="container-fluid">
-                                                    <a class="navbar-brand" href="#">
-                                                    <img src="https://cdn-icons-png.flaticon.com/512/4685/4685852.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
-                                                    1BICI
+                                                    <a class="navbar-brand text-white bg-dark" href="#">
+                                                    <img src="https://cdn-icons-png.flaticon.com/512/4685/4685852.png"  alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
+                                                     1BICI
                                                     </a>
 
                                                     <ul class="nav justify-content-center">
@@ -122,38 +120,106 @@
                                                                     
                                      </div>
                                             </nav>
+                                         
+                 
+
                 
                     <main>
-                    <div class="row py-lg-6" style="color:#E63232 " >
-                        <div class="col-lg-6 col-md-8 mx-auto" style="background-image: url('https://www.todofondos.net/wp-content/uploads/teal-full-hd-fondo-azul-resolucion-2560x1600-pixel-hd-1024x640.jpg');
-         background-repeat: no-repeat;
-            background-size: cover; ">
-                             <div class="container text-center">
-                            <h1 class="fw-light" style="color:#FFFFFF" >Bienvenido</h1>
-                             </div>
-                            <p class="fw-light" style="color:#FFFFFF ">Necesitas mantenimiento o servicio , Agenda tu cita hoy mismo , hemos puesto a tu disposicion una manera mas eficiente de realizar tus gestiones</p>
 
-                            <div class="container text-center">
-                            <a href="{{ route('login') }}" class="btn btn-primary my-2">Realizar una cita </a>
-                            <a href="#" class="btn btn-secondary my-2">Contactanos</a> 
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+      
+        <img src="https://www.guatemala.com/fotos/201702/travesia-en-rio-dulce.jpg" class="d-block w-100" alt="..." width="100%" height="700"> 
 
-                            </div>
-                        
-                            </p>
+        <div class="container" >
+          <div class="carousel-caption">
 
-                            <div class="container text-center">
-                            <h1 class="fw-light" style="color:#FFFFFF" >Nuestras Sucursales</h1>
-                             </div>
+          <div class="card">
+                   
 
-                            
+         <div class="p-0 mb-0  text-dark">
+
+         <h5 class="card-header">#1BICIPOWER</h5>
+            <h1 >Bienvenido</h1>
+          
+
+              <p >Aqui encontraras lo mejor para tu bicicleta </p>
+            <a href="{{ route('login') }}" class="btn btn-primary my-2">Realizar una cita </a>
+          </div>
+        </div>
+                </div>
+                </div>
+
+          
+         
+      </div>
+      <div class="carousel-item">
+
+      <img src="https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2019/08/27/10af1134-1df9-40e5-a99b-5559d11ff663/loic-bruni-world-champs" class="d-block w-100" alt="..." width="100%" height="700"> 
 
 
+        <div class="container">
+          <div class="carousel-caption">
 
-                        </div>
-                        </div>  
+          <div class="card">
+                   
+
+                   <div class="p-0 mb-0  text-dark">
+          
+                   <h5 class="card-header">#1BICIPB</h5>
+                      <h1 >Obtén una bicicleta. No te arrepentirás mientras vivas.</h1>
+                    
+          
+                        <p >Mark Twain, escritor estadounidense quien escribió esta frase al final del ensayo “Taming the Bicycle” (Domando la Bicicleta) de 1880.</p>
+                     
+                    </div>
+                  </div>
+         
+          
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+      <img src="https://biciclub.com/wp-content/uploads/2019/07/Desafi%CC%81o-RN23-Aviso-Publicitario-02.jpg" class="d-block w-100" alt="..." width="100%" height="700"> 
+        <div class="container">
+          <div class="carousel-caption ">
+          <div class="card">
+                   
+
+                   <div class="p-0 mb-0  text-dark">
+          
+                   <h5 class="card-header">#1BICITIME</h5>
+                      <h1 >Ante todo, Tu equipo de Seguridad </h1>
+                    
+          
+                        <p >No porque lleves prisa o te despeines, olvides el casco, coderas o chalecos reflejantes. Siempre date tiempo de cargar con los elementos adecuados cuando ruedes. </p>
+                      <a href="{{ route('login') }}" class="btn btn-primary my-2">Realizar una cita </a>
+                    </div>
+                  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+               
 
                    
-                    <section class=" text-center container"  >
+                    <section class=" text-center container"   >
                          
 
                         <div class="container text-center">
@@ -165,7 +231,7 @@
     <br></br>
  
 
-    <div class="col">
+    <div class="col" >
     
     </div>
   </div>
@@ -175,7 +241,7 @@
             background-size: cover; ">
                         <div class="col">
                             <div class="card h-100">
-                            <img src="https://scontent.fgua2-1.fna.fbcdn.net/v/t39.30808-6/312176768_568664331730216_501969288739132067_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=0H-SCaaNrq8AX9Dx_A_&_nc_ht=scontent.fgua2-1.fna&oh=00_AT-7YwPTQTjagfsQNcUE0YtyBwOoh1x7hFnGw2MnphcnBw&oe=635AD93F" class="card-img-top" alt="..." height="300">
+                            <img src="https://www.vibike.com/img/cms/taller-bicicletas.jpg" class="card-img-top" alt="..." height="300">
                             <div class="card-body">
                             <h5 class="card-title" style="color:#2374F1">Sucursal  20 ca 19 av</h5>
                                 <p class="card-text">Horarios de Atencion</p>
@@ -192,7 +258,7 @@
                         <br></br>
                         <div class="col">
                             <div class="card h-100">
-                            <img src="https://scontent.fgua2-1.fna.fbcdn.net/v/t39.30808-6/273147374_4956271381097341_6984769812489232452_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=e3f864&_nc_ohc=olLxj0ySvNAAX_bZgQT&_nc_ht=scontent.fgua2-1.fna&oh=00_AT8x52WGpY-QrwpaRU_frVBMsgJpCdeD3F5iCP8VdxEkFg&oe=635B3D7E" class="card-img-top" alt="..." height="300">
+                            <img src="https://simss.info/wp-content/uploads/2020/05/curso-master-en-mecanica-profesional-en-simss2.jpg" class="card-img-top" alt="..." height="300">
                             <div class="card-body">
                                
                                 <h5 class="card-title" style="color:#2374F1">Sucursal  13 CA 06 av</h5>

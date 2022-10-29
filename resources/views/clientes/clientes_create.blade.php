@@ -30,7 +30,7 @@
 
                 @include("notificacion")
                 <button class="btn btn-success">Guardar</button>
-                <a class="btn btn-primary" href="{{route("clientes.index")}}">Volver al listado</a>
+                <a class="btn btn-primary" href="{{route("clientes.index")}}">Volver </a>
             </form>
         </div>
     </div>
